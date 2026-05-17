@@ -13,7 +13,7 @@ from peft import (
     prepare_model_for_kbit_training
 )
 # Импортируем датасет через наш настроенный __init__.py
-from src import EminemLyricsDataset
+from src import EminemLirics
 
 
 def main():
@@ -67,7 +67,7 @@ def main():
     # 5. Инициализация нашего кастомного датасета
     print(" Подготовка данных...")
     data_path = "/home/vache/Projects/NLP/Eminem_LLM_generator/data/data.txt"
-    train_dataset = EminemLyricsDataset(data_path, tokenizer, max_length=64)
+    train_dataset = EminemLirics(data_path, tokenizer, max_length=64)
 
     # Коллатор для автоматической сборки тензоров в батчи
     data_collator = DataCollatorForLanguageModeling(tokenizer=tokenizer, mlm=False)

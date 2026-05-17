@@ -1,3 +1,3 @@
-from .dataset import EminemLyricsDataset
+from .dataset import EminemLirics
 
 __all__ = ["EminemLirics"]
