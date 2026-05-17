@@ -3,7 +3,7 @@ from torch.utils.data import Dataset
 
 
 class EminemLirics(Dataset):
-    def __init__(self, file_path, tokenizer, max_length=64):
+    def __init__(self, file_path='data/data.txt', tokenizer, max_length=64):
         self.examples = []
 
         with open(file_path, 'r', encoding='utf-8') as f:
