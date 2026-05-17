@@ -66,7 +66,7 @@ def main():
 
     # 5. Инициализация нашего кастомного датасета
     print(" Подготовка данных...")
-    data_path = "/home/vache/Projects/NLP/Eminem_LLM_generator/data/data.txt"
+    data_path = "data/data.txt"
     train_dataset = EminemLirics(data_path, tokenizer, max_length=64)
 
     # Коллатор для автоматической сборки тензоров в батчи
